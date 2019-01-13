@@ -6,7 +6,7 @@ const CardFour = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "nyt-app.PNG" }) {
+        placeholderImage: file(relativePath: { eq: "port-blog.JPG" }) {
           childImageSharp {
             fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid
@@ -18,12 +18,12 @@ const CardFour = () => (
     render={data =>
       <div className="card">
         <div className="card__stack">
-            <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
-            <div>React</div>
-            <div>Redux</div>
-            <div>Sass</div>
-            <div>Flask Proxy Server</div>
-          </div>
+          <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+          <div>React</div>
+          <div>Redux</div>
+          <div>Sass</div>
+          <div>Flask Proxy Server</div>
+        </div>
         <div className="card__text">
           <h3>Lorem, ipsum dolor.</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum dolorum possimus nulla consequatur?</p>
@@ -31,8 +31,8 @@ const CardFour = () => (
             <a href="">Site</a>
 
             <a href="">Github</a>
-          </div>        
-        </div>        
+          </div>
+        </div>
       </div>
     }
   />

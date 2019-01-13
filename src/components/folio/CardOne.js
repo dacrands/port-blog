@@ -16,8 +16,14 @@ const CardOne = () => (
       }
     `}
     render={data => 
-    <div className="card">
-      <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+    <div className="card">      
+    <div className="card__stack">
+        <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+        <div>Flask</div>
+        <div>Postgresql</div>
+        <div>Bcrypt</div>
+        <div>Heroku</div>
+      </div>
       <div className="card__text">
         <h4>To View It</h4>
         <p>
@@ -32,13 +38,7 @@ const CardOne = () => (
         
           <a href="">Github</a>
         </div>        
-      </div>
-      <div className="card__stack">
-        <div>Flask</div>
-        <div>Postgresql</div>
-        <div>Bcrypt</div>
-        <div>Heroku</div>
-      </div>
+      </div>      
     </div>    
     }
   />

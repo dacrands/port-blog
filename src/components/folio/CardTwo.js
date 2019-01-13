@@ -17,7 +17,13 @@ const CardTwo = () => (
     `}
     render={data => 
     <div className="card">
-      <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+      <div className="card__stack">
+        <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+        <div>React</div>
+        <div>Fetch-API</div>
+        <div>Webpack</div>
+        <div>Google Analytics</div>
+      </div>
       <div className="card__text">
         <h4>Bergen STEM</h4>
         <p>
@@ -32,13 +38,7 @@ const CardTwo = () => (
         
           <a href="">Github</a>
         </div> 
-      </div>
-      <div className="card__stack">
-        <div>React</div>
-        <div>Fetch-API</div>
-        <div>Webpack</div>
-        <div>Google Analytics</div>
-      </div>
+      </div>      
     </div>    
     }
   />

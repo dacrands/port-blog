@@ -8,7 +8,9 @@ const SecondPage = ({data}) => (
   <Layout>
     <SEO title="Blog" />
     <header className="header"> 
-      <h2>This is the <span>blog</span> page</h2>
+      <div className="container">
+        <h2><span>Blog</span> page</h2>
+      </div>    
     </header> 
     <div className="pages">
       {
@@ -16,8 +18,8 @@ const SecondPage = ({data}) => (
           return <Link className="pages__item"
             to={post.node.frontmatter.path}
           >
-              <h3>{post.node.frontmatter.title}</h3>
-              <h4>{post.node.frontmatter.date}</h4>
+              <h3>{post.node.frontmatter.date}</h3>
+              <h4>{post.node.frontmatter.title}</h4>
               <p>{post.node.frontmatter.info}</p>
             </Link>
         })
@@ -28,7 +30,7 @@ const SecondPage = ({data}) => (
 
 export const pageQuery = graphql`
   query BlogQuery {
-    allMarkdownRemark(limit: 100) {
+    allMarkdownRemark(sort:{ order: DESC, fields: [frontmatter___date]}) {
       edges {
         node {
           frontmatter {
