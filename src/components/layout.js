@@ -23,10 +23,8 @@ const Layout = ({ children }) => (
           {children}
           <footer className="footer">                   
             <div>
-              <a href="">Resume</a>
-              {/* <hr/> */}
-              <a href="">Github</a>
-              {/* <hr/> */}
+              <a href="">Resume</a>              
+              <a href="">Github</a>              
               <a href="">Email</a>
             </div>
             <div>
