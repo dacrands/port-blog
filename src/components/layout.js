@@ -21,12 +21,19 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           {children}
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-            {` `}
-            by David Crandall
+          <footer className="footer">                   
+            <div>
+              <a href="">Resume</a>
+              {/* <hr/> */}
+              <a href="">Github</a>
+              {/* <hr/> */}
+              <a href="">Email</a>
+            </div>
+            <div>
+              © {new Date().getFullYear()},
+              {` `}            
+              David Crandall
+            </div>     
           </footer>
         </div>
       </>
