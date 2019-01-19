@@ -17,22 +17,29 @@ const CardFour = () => (
     `}
     render={data =>
       <div className="card">
-        <div className="card__stack">
-            <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
-            <div>React</div>
-            <div>Redux</div>
-            <div>Sass</div>
-            <div>Flask Proxy Server</div>
-          </div>
+        <div className="card__info">
+          <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+          <ul className="card__stack">
+            {
+              [
+                'React',
+                'Redux',
+                'Sass',
+                'Flask Proxy Server'].map(skill => (
+                  <li>{skill}</li>
+                ))
+            }
+          </ul>
+        </div>
         <div className="card__text">
-          <h3>Lorem, ipsum dolor.</h3>
+          <h4>New York Times App</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum dolorum possimus nulla consequatur?</p>
           <div className="card__text-links">
             <a href="">Site</a>
 
             <a href="">Github</a>
-          </div>        
-        </div>        
+          </div>
+        </div>
       </div>
     }
   />

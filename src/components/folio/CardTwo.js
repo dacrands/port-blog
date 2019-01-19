@@ -8,7 +8,7 @@ const CardTwo = () => (
       query {
         placeholderImage: file(relativePath: { eq: "bcc-stem.PNG" }) {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -17,12 +17,19 @@ const CardTwo = () => (
     `}
     render={data => 
     <div className="card">
-      <div className="card__stack">
+      <div className="card__info">
         <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
-        <div>React</div>
-        <div>Fetch-API</div>
-        <div>Webpack</div>
-        <div>Google Analytics</div>
+        <ul className="card__stack">
+            {
+              [
+              'React', 
+              'Fetch-API', 
+              'Webpack', 
+              'Google Analytics'].map(skill => (
+                <li>{skill}</li>
+              ))
+            }
+          </ul>
       </div>
       <div className="card__text">
         <h4>Bergen STEM</h4>

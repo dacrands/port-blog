@@ -8,7 +8,7 @@ const CardFour = () => (
       query {
         placeholderImage: file(relativePath: { eq: "port-blog.JPG" }) {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -17,12 +17,19 @@ const CardFour = () => (
     `}
     render={data =>
       <div className="card">
-        <div className="card__stack">
+        <div className="card__info">
           <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
-          <div>React</div>
-          <div>Redux</div>
-          <div>Sass</div>
-          <div>Flask Proxy Server</div>
+          <ul className="card__stack">
+            {
+              [
+                'React',
+                'Redux',
+                'Sass',
+                'Flask'].map(skill => (
+                  <li>{skill}</li>
+                ))
+            }
+          </ul>
         </div>
         <div className="card__text">
           <h3>Lorem, ipsum dolor.</h3>
