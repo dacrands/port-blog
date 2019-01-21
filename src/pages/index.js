@@ -17,16 +17,19 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <Landing />
-    <section className="container slide-in-fwd-bottom">
+    <section className="folio slide-in-fwd-bottom">
+      <div className="container">
+      
       <header className="folio__header">
         <h1>Portfolio</h1>
       </header>
-      <div className="folio">
+      <div className="folio__cards">
         <CardOne />
         <CardTwo />
         <CardFour />
         <CardThree />        
         <CardFive />
+      </div>
       </div>
     </section>
   </Layout>
