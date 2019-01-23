@@ -6,7 +6,11 @@ module.exports = {
     author: `dacrands`,
   },
   plugins: [   
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,17 +31,14 @@ module.exports = {
           include: /assets/
       }
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#042291`,
+        theme_color: `#042291`,
         display: `minimal-ui`,
         icon: `src/images/dc-logo-purple.png`, // This path is relative to the root of the site.
       },

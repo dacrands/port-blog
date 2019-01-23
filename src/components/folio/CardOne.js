@@ -18,7 +18,10 @@ const CardOne = () => (
     render={data =>
       <div className="card">
         <div className="card__info">
-          <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+          <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />          
+        </div>
+        <div className="card__text">
+          <h4>To View It</h4>
           <ul className="card__stack">
             {
               [
@@ -30,9 +33,6 @@ const CardOne = () => (
                 ))
             }
           </ul>
-        </div>
-        <div className="card__text">
-          <h4>To View It</h4>
           <p>
             A to-do list application that features a scrolling-stocker ticker, weather information,
             and a custom background Youtube video.

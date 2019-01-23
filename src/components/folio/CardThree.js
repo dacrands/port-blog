@@ -19,21 +19,24 @@ const CardThree = () => (
     <div className="card">
       <div className="card__info">        
         <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+      </div>      
+      <div className="card__text">
+        <h4>Blog</h4>
         <ul className="card__stack">
             {
               [
               'Gatsby', 
               'Styled-Components', 
               'Sass', 
-              'YAML Front Matter<'].map(skill => (
+              'YAML Front Matter'].map(skill => (
                 <li>{skill}</li>
               ))
             }
           </ul>
-      </div>      
-      <div className="card__text">
-        <h4>Blog</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum dolorum possimus nulla consequatur?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Consectetur earum dolorum possimus nulla consequatur?
+        </p>
         <div className="card__text-links">
           <a href="">Site</a>
         

@@ -19,6 +19,9 @@ const CardTwo = () => (
     <div className="card">
       <div className="card__info">
         <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+      </div>
+      <div className="card__text">
+        <h4>Bergen STEM</h4>
         <ul className="card__stack">
             {
               [
@@ -30,9 +33,7 @@ const CardTwo = () => (
               ))
             }
           </ul>
-      </div>
-      <div className="card__text">
-        <h4>Bergen STEM</h4>
+          {/* <hr/> */}
         <p>
         React application designed and built for the STEM Department at Bergen Community College. 
         </p>

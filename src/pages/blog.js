@@ -9,7 +9,9 @@ const SecondPage = ({data}) => (
     <SEO title="Blog" />
     <header className="header header--green"> 
       <div className="container">
-        <h1 className="text-focus-in"><span>Blog</span> page</h1>
+        <h1 className="text-focus-in">Blog</h1>
+        <hr/>
+        <p>This is where I write about programming.</p>
       </div>    
     </header> 
     <div className="pages">
@@ -19,9 +21,13 @@ const SecondPage = ({data}) => (
             return <Link className="pages__item"
               to={post.node.frontmatter.path}
             >
-                <h3>{post.node.frontmatter.date}</h3>
-                <h4>{post.node.frontmatter.title}</h4>
+              <div className="pages__item-title">
+                <h3>{post.node.frontmatter.title}</h3>
+                <h4>{post.node.frontmatter.date}</h4>
+              </div>                
+              <div className="pages__item-content">
                 <p>{post.node.frontmatter.info}</p>
+              </div>              
               </Link>
           })
         }    
