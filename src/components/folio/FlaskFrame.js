@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const CardOne = () => (
+const FlaskFrame = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -51,6 +51,4 @@ const CardOne = () => (
   />
 )
 
-
-
-export default CardOne
+export default FlaskFrame

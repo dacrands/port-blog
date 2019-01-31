@@ -15,7 +15,7 @@ const SecondPage = ({data}) => (
       </div>    
     </header> 
     <div className="pages">
-      <div className="pages__container slide-in-fwd-bottom">
+      <div className="pages__container">
         {
           data.allMarkdownRemark.edges.map(post => {
             return <Link className="pages__item"

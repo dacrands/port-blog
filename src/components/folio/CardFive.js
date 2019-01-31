@@ -19,6 +19,10 @@ const CardFour = () => (
       <div className="card">
         <div className="card__info">
           <Img className="card__img" fluid={data.placeholderImage.childImageSharp.fluid} />
+          
+        </div>
+        <div className="card__text">
+          <h4>Lorem, ipsum dolor.</h4>
           <ul className="card__stack">
             {
               [
@@ -30,9 +34,6 @@ const CardFour = () => (
                 ))
             }
           </ul>
-        </div>
-        <div className="card__text">
-          <h3>Lorem, ipsum dolor.</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum dolorum possimus nulla consequatur?</p>
           <div className="card__text-links">
             <a href="">Site</a>

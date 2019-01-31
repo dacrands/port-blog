@@ -13,30 +13,120 @@ import HerokuSvg from '../images/skills/heroku-logo.svg'
 import JsSvg from '../images/skills/js-logo.svg'
 
 const Skills = () => (
-  <div className="logos">   
-    <div className="logos__svgs"> 
-      <HtmlSvg style={styles.svg}/>
-      <CssSvg style={styles.svg}/>   
-      <JsSvg style={styles.svg}/>   
-      <ReactSvg title="react" style={styles.svg}/>
-      <NodeSvg style={styles.svg}/>
-      <SassSvg style={styles.svg}/>
-      <PostmanSvg style={styles.svg}/>
-      <WebpackSvg style={styles.svg}/>
-      <ReduxSvg style={styles.svg}/>
-      <FlaskSvg style={styles.svg}/>
-       
-      <HerokuSvg style={styles.svg}/>
-         
-    </div>   
+  <div className="logos">
+    <div className="logos__container">
+      <div className="container">
+        <h1>Stack</h1>
+        {/* <hr /> */}
+        <h3>Here's a list of the things I use (essentially) everyday</h3>
+        <div className="stack">
+          <div className="stack__row">
+          
+          <div className="stack__item">
+            <h3>Skills</h3>
+            <ul>
+              {
+                [
+                  "ajax", 
+                  "responsive-web design", 
+                  "user-authentication", 
+                  "relation databases"
+                ].map(skill => (
+                  <li>{skill}</li>
+                ))
+              }              
+            </ul>
+          </div>
+          <div className="stack__item">
+            <h3>Languages</h3>
+            <ul>
+              {
+                [
+                  "Python", 
+                  "JavaScript", 
+                  "HTML", 
+                  "CSS"
+                ].map(skill => (
+                  <li>{skill}</li>
+                ))
+              }              
+            </ul>
+          </div>
+          </div>
+          <div className="stack__row">
+          
+          <div className="stack__item">
+            <h3>Frameworks/Libraries</h3>
+            <ul>
+            {
+                [
+                  "React", 
+                  "Flask", 
+                  "SQLAlchemy", 
+                  "Webpack", 
+                  "React/Redux", 
+                  "Sass",                   
+                ].map(skill => (
+                  <li>{skill}</li>
+                ))
+              } 
+            </ul>
+          </div>
+          <div className="stack__item">
+            <h3>Tools</h3>
+            <ul>
+            {
+                [
+                  "Git", 
+                  "Heroku", 
+                  "DigitalOcean", 
+                  "VS code"
+                ].map(skill => (
+                  <li>{skill}</li>
+                ))
+              } 
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div className="logos__inner">
+        <span className="logos__svgs">
+          <HtmlSvg style={styles.svg} />
+          <CssSvg style={styles.svg} />
+          <JsSvg style={styles.svg} />
+          <ReactSvg title="react" style={styles.svg} />
+          <NodeSvg style={styles.svg} />
+          <SassSvg style={styles.svg} />
+          <PostmanSvg style={styles.svg} />
+          <WebpackSvg style={styles.svg} />
+          <ReduxSvg style={styles.svg} />
+          <FlaskSvg style={styles.svg} />
+          <HerokuSvg style={styles.svg} />
+        </span>
+        <span className="logos__svgs">
+          <HtmlSvg style={styles.svg} />
+          <CssSvg style={styles.svg} />
+          <JsSvg style={styles.svg} />
+          <ReactSvg title="react" style={styles.svg} />
+          <NodeSvg style={styles.svg} />
+          <SassSvg style={styles.svg} />
+          <PostmanSvg style={styles.svg} />
+          <WebpackSvg style={styles.svg} />
+          <ReduxSvg style={styles.svg} />
+          <FlaskSvg style={styles.svg} />
+          <HerokuSvg style={styles.svg} />
+        </span>
+      </div>
+    </div>
   </div>
 )
 
 const styles = {
   svg: {
-    height: '70px',    
-    width: '70px', 
-    margin: '1rem',       
+    height: '200px',
+    width: '200px',
+    margin: '1rem',
     // float: 'left',
   }
 }
