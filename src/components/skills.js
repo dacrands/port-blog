@@ -28,7 +28,7 @@ const Skills = () => (
               {
                 [
                   "ajax", 
-                  "responsive-web design", 
+                  "responsive web design", 
                   "user-authentication", 
                   "relation databases"
                 ].map(skill => (
@@ -56,7 +56,7 @@ const Skills = () => (
           <div className="stack__row">
           
           <div className="stack__item">
-            <h3>Frameworks/Libraries</h3>
+            <h3>Frameworks/<br/>Libraries</h3>
             <ul>
             {
                 [

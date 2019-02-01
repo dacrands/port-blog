@@ -786,16 +786,20 @@ $light: #A0CDE1;
 }
 
 .stack__row {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   // margin-bottom: 5rem;
   // margin: 3rem;
+  position: relative;
+  display: flex;
+  // outline: 1px solid red;
+  justify-content: space-evenly;
 }
 
 .stack__item {  
-  margin-right: 5rem;    
-  // margin: 3rem;
-  margin-top: 5rem;
+  width: 50%;
+  // outline: 2px dashed green;    
+  padding: 1rem;
   ul {
     margin: 0;        
     list-style: none;
@@ -1154,39 +1158,6 @@ text-decoration: underline;
   font-family: 'Times New Roman', Times, serif;
 }
 
-@media(max-width:850px) {
-  .card {
-    flex-direction: column;
-  }  
-  // .logos {
-  //   left: 0;
-  //   right: 0;
-  //   z-index: -1;    
-  //   /* outline: 1px solid red; */
-  //   display: flex;
-  //   justify-content: flex-end;
-  // }
-
-  // .logos__svgs {
-  //   justify-content: flex-end;
-  //   align-content: center;
-  //   /* outline: 1px solid red;     */
-  // }
-  .landing__container {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .landing__links {
-    margin: 0;
-  }
-  .landing__links-link {
-    margin: 0.25rem;
-  }
-}
-
-
-
 .contact {
   background: $primary-light;
   color: $light;
@@ -1230,6 +1201,53 @@ text-decoration: underline;
     border-radius: 5px;
   }
 }
+
+
+@media(max-width:850px) {
+  .card {
+    flex-direction: column;
+  }  
+  // .logos {
+  //   left: 0;
+  //   right: 0;
+  //   z-index: -1;    
+  //   /* outline: 1px solid red; */
+  //   display: flex;
+  //   justify-content: flex-end;
+  // }
+
+  // .logos__svgs {
+  //   justify-content: flex-end;
+  //   align-content: center;
+  //   /* outline: 1px solid red;     */
+  // }
+  .landing__container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .landing__links {
+    margin: 0;
+  }
+  .landing__links-link {
+    margin: 0.25rem;
+  }
+}
+
+@media(max-width:400px) {
+  .stack__row {
+    display: block;
+  }
+  .stack__item {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
 
 
 /* =================
