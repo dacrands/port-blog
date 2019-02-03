@@ -48,12 +48,16 @@ class Navbar extends Component {
       <div className="navbar__container">  
         <Link
           to="/"
-          activeStyle={{borderBottom:'4px solid #2c2a2a'}}
+          className="navbar__link"
+          activeClassName="navbar__link--active"
+          // activeStyle={{borderBottom:'4px solid #2c2a2a'}}
         >Home</Link>
         {` `}
         <Link
           to="/blog"
-          activeStyle={{borderBottom:'4px solid #2c2a2a'}}
+          className="navbar__link"
+          activeClassName="navbar__link--active"
+          // activeStyle={{borderBottom:'4px solid #2c2a2a'}}
         >Blog</Link>
       </div>    
     </nav>
