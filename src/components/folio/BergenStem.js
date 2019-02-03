@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const CardTwo = () => (
+const BergenStem = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -42,9 +42,9 @@ const CardTwo = () => (
         with backend-developer to create a site that showcases student projects, STEM events, and scholarship opportunities.        
         </p>
         <div className="card__text-links">
-          <a href="">Site</a>
+          <a href="https://www.bergenstem.com/">Site</a>
         
-          <a href="">Github</a>
+          <a href="https://github.com/dacrands/bergen-reactpack">Github</a>
         </div> 
       </div>      
     </div>    
@@ -54,4 +54,4 @@ const CardTwo = () => (
 
 
 
-export default CardTwo
+export default BergenStem

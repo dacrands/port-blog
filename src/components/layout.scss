@@ -1063,24 +1063,22 @@ $light: #A0CDE1;
 }
 
 .card__text {  
-  padding: 1rem;
-  /* margin-top: 1rem; */
+  padding: 1rem;  
   display: flex;
   max-width: 400px;
   flex-direction: column;
   transition: all 200ms ease;
+  line-height: 150%;
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
   h4 {
-    margin: 0;
-    // color: $primary;
+    margin: 0;    
     margin-bottom: 0.25rem;
   }
 }
 
-.card__info {
-  /* padding: 0.25rem .5rem; */
+.card__info {  
   color: #54565f;    
   flex-grow: 1;
 }
@@ -1098,9 +1096,11 @@ $light: #A0CDE1;
 
 .card__stack li {
   // border: 1px dashed #dadada;  
-  padding: 0;
+  // padding: .25rem;
   line-height: 150%;  
-  margin-right: .5rem;
+  margin-right: .5rem;  
+  // margin-bottom: 0.5rem;
+  font-style: italic;
 }
 
 

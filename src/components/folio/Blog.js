@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const CardThree = () => (
+const Blog = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -33,14 +33,16 @@ const CardThree = () => (
               ))
             }
           </ul>
+          <p>Personal blog where I chronicle my 
+            programming journey, write tutorials, and
+            discuss web development.
+          </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Consectetur earum dolorum possimus nulla consequatur?
+        GatsbyJS build hosted on gitpages. Features a markdown blog that supports YAML front matter.
         </p>
         <div className="card__text-links">
-          <a href="">Site</a>
-        
-          <a href="">Github</a>
+          <a href="https://dacrands.github.io/">Site</a>        
+          <a href="https://github.com/dacrands/gatsby-blog">Github</a>
         </div> 
       </div>
       
@@ -51,4 +53,4 @@ const CardThree = () => (
 
 
 
-export default CardThree
+export default Blog

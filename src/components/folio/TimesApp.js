@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const CardFour = () => (
+const TimesApp = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -33,11 +33,14 @@ const CardFour = () => (
                 ))
             }
           </ul>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur earum dolorum possimus nulla consequatur?</p>
+          <p>Single-page application featuring NYT data. React/Redux front-end, Flask back-end. </p>
+          <p>Features an archive search where users can 
+            read articles dating back to the year 1900.
+          </p>
           <div className="card__text-links">
-            <a href="">Site</a>
+            <a href="https://www.times.dcrands.com/">Site</a>
 
-            <a href="">Github</a>
+            <a href="https://github.com/dacrands/new-york-times-app">Github</a>
           </div>
         </div>
       </div>
@@ -47,4 +50,4 @@ const CardFour = () => (
 
 
 
-export default CardFour
+export default TimesApp

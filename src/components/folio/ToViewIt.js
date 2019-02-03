@@ -2,7 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const FlaskFrame = () => (
+const ToViewIt = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -41,9 +41,9 @@ const FlaskFrame = () => (
             Features SendGrid email authentication and the YouTube IFrame API.
         </p>
           <div className="card__text-links">
-            <a href="">Site</a>
+            <a href="https://www.toviewit.xyz/">Site</a>
 
-            <a href="">Github</a>
+            <a href="https://github.com/dacrands/flask-smart-monitor">Github</a>
           </div>
         </div>
       </div>
@@ -51,4 +51,4 @@ const FlaskFrame = () => (
   />
 )
 
-export default FlaskFrame
+export default ToViewIt

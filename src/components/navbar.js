@@ -2,22 +2,6 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
-// const Navbar = ({ siteTitle }) => (
-  // <nav className="navbar">
-  //   <div className="navbar__container">  
-  //     <Link
-  //       to="/"
-  //       activeStyle={{borderBottom:'4px solid #2c2a2a'}}
-  //     >Home</Link>
-  //     {` `}
-  //     <Link
-  //       to="/blog"
-  //       activeStyle={{borderBottom:'4px solid #2c2a2a'}}
-  //     >Blog</Link>
-  //   </div>    
-  // </nav>
-// )
-
 class Navbar extends Component {
   constructor(props){
     super(props)
