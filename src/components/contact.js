@@ -95,15 +95,15 @@ export default class Contact extends React.Component {
                 </label>
               </p>
               <p className="form__item">
-                <input ref="nameInput" type="text" name="name" onChange={this.handleChange} />
+                <input required label="name" ref="nameInput" type="text" name="name" onChange={this.handleChange} />
                 <label ref="nameLabel">Your name</label>
               </p>
               <p className="form__item">
-                <input ref="emailInput" type="email" name="email" onChange={this.handleChange} />
+                <input required label="email" ref="emailInput" type="email" name="email" onChange={this.handleChange} />
                 <label ref="emailLabel">Your email</label>
               </p>
               <p className="form__item">
-                <textarea placeholder="write something nice..." rows="5" cols="30" name="message" onChange={this.handleChange} />
+                <textarea required label="text area" placeholder="write something nice..." rows="5" cols="30" name="message" onChange={this.handleChange} />
               </p>
               <p>
                 <button className="button" type="submit">Send</button>

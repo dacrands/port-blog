@@ -22,7 +22,9 @@ class Navbar extends Component {
       })
     } else {
       this.setState({isLanding:true})
-      document.querySelector('.header').style.paddingTop = `${this.refs.nav.clientHeight}px`
+      if (document.querySelector('.header')) {
+        document.querySelector('.header').style.paddingTop = `${this.refs.nav.clientHeight}px`
+      }      
     }    
   }
 

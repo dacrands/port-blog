@@ -24,7 +24,7 @@ const Landing = () => (
 
         <div className="landing__container">
           <div className="landing__title">
-            <h1 className="text-focus-in">
+            <h1 className="">
               David Crandall
             </h1>
             <h2 className="text-focus-in">
