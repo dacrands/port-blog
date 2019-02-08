@@ -21,28 +21,26 @@ export default class Contact extends React.Component {
       emailLabel,
     } = this.refs
 
-    nameInput.addEventListener('focus', e => {
-      // nameInput.classList.add('form__item--active')
+    nameInput.addEventListener('focus', e => {      
       nameLabel.classList.add('label--move', 'form__item--active')
     })
+
     nameInput.addEventListener('blur', e => {
       if (e.target.value === "") {
-        nameLabel.classList.remove('label--move', 'form__item--active')
-        return
+        nameLabel.classList.remove('label--move', 'form__item--active')        
       }
     })
 
-    emailInput.addEventListener('focus', e => {
-      // emailInput.classList.add('form__item--active')
+    emailInput.addEventListener('focus', e => {      
       emailLabel.classList.add('label--move', 'form__item--active')
     })
+
     emailInput.addEventListener('blur', e => {
       if (e.target.value === "") {
-        emailLabel.classList.remove('label--move', 'form__item--active')
-        return
+        emailLabel.classList.remove('label--move', 'form__item--active')        
       }
     })
-  }
+  };
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -65,7 +63,7 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <section className="contact">
+      <section id="contact" className="contact">
           <div className="contact__content">
           <header className="contact__title">         
               <h1>Say hello!</h1>  
@@ -95,15 +93,16 @@ export default class Contact extends React.Component {
                 </label>
               </p>
               <p className="form__item">
-                <input required label="name" ref="nameInput" type="text" name="name" onChange={this.handleChange} />
-                <label ref="nameLabel">Your name</label>
+                <input required ref="nameInput" type="text" name="name" onChange={this.handleChange} />
+                <label htmlFor="name" ref="nameLabel">Your name</label>
               </p>
               <p className="form__item">
-                <input required label="email" ref="emailInput" type="email" name="email" onChange={this.handleChange} />
-                <label ref="emailLabel">Your email</label>
+                <input required ref="emailInput" type="email" name="email" onChange={this.handleChange} />
+                <label htmlFor="email" ref="emailLabel">Your email</label>
               </p>
               <p className="form__item">
-                <textarea required label="text area" placeholder="write something nice..." rows="5" cols="30" name="message" onChange={this.handleChange} />
+                <label htmlFor="message"></label>
+                <textarea required placeholder="Send a message..." rows="5" cols="25" name="message" onChange={this.handleChange} />
               </p>
               <p>
                 <button className="button" type="submit">Send</button>

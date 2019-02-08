@@ -32,10 +32,10 @@ const Landing = () => (
           </h2>
           </div>
           <div className="landing__links">
-            <a className="landing__links-link" href="">
+            <a className="button" href="https://github.com/dacrands">
               Github
             </a>
-            <a className="landing__links-link" href="">
+            <a className="button button--light" href="#contact">
               Contact Me
             </a>
           </div>
