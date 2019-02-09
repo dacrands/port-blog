@@ -28,7 +28,7 @@ const Landing = () => (
               David Crandall
             </h1>
             <h2 className="text-focus-in">
-              a full-stack web developer
+              full-stack web developer
           </h2>
           </div>
           <div className="landing__links">

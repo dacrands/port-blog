@@ -636,6 +636,8 @@ pre tt:after {
 +*+*+*+*+*+*+*+*+* */
 $primary-light: #458ba8;
 $primary-light: #458ba8;
+// Needed for sufficient color contrast
+$primary-text: #347c9a;
 $primary: #134568;
 $comp: rgb(238, 164, 80);
 $light: #A0CDE1;
@@ -716,7 +718,7 @@ $light-shade: rgba(160, 205, 225, 0.5);
 }
 
 .footer__link  {
-  color: #9c9da3;
+  color: $light;
   text-decoration: none;  
   font-size: 14px;
   margin: 0 1rem;
@@ -951,7 +953,7 @@ $light-shade: rgba(160, 205, 225, 0.5);
 .info {  
   display: flex;
   flex-flow: wrap;
-  color: $primary-light;
+  color: $primary-text;
   justify-content: space-evenly;
   padding: 40px 0;
   font-size: 85%;
@@ -1187,9 +1189,7 @@ text-decoration: underline;
 }
 
 .form {  
-  max-width: 400px;
-  // margin: 0 auto;
-  // background: #f9f9f9;  
+  max-width: 400px; 
   color: #dadada;
   padding: 1rem ;
 }
@@ -1205,9 +1205,20 @@ text-decoration: underline;
   label {
     position: absolute;
     top: 1rem;
-    left: 0.5rem;          
+    left: 0;          
     transition: all 200ms ease;
     pointer-events: none;    
+  }
+  label[for="message"] {   
+    top: 0.5rem;
+    left: 0.5rem;
+    &~.label--move{
+      transform: translateY(-50%);
+      font-size: 14px;
+      font-weight: bold;      
+      // color: $comp;
+      color: orange;
+    }
   }
   input {
     border: none;
@@ -1222,6 +1233,8 @@ text-decoration: underline;
       transform: translateY(-50%);
       font-size: 14px;
       font-weight: bold;
+      left: 0.5rem;
+      top: 0.75rem;
     }
   }
   textarea {

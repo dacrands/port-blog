@@ -19,8 +19,20 @@ export default class Contact extends React.Component {
       nameLabel,
       emailInput,
       emailLabel,
+      textArea,
+      textareaLabel,
     } = this.refs
 
+    textArea.addEventListener('focus', e => {      
+      textareaLabel.style.opacity = 0;
+    })
+
+    textArea.addEventListener('blur', e => {
+      if (e.target.value === "") {
+        textareaLabel.style.opacity = 1;
+      }
+    })
+    
     nameInput.addEventListener('focus', e => {      
       nameLabel.classList.add('label--move', 'form__item--active')
     })
@@ -93,16 +105,37 @@ export default class Contact extends React.Component {
                 </label>
               </p>
               <p className="form__item">
-                <input required ref="nameInput" type="text" name="name" onChange={this.handleChange} />
+                <input 
+                  required                   
+                  type="text" 
+                  name="name" 
+                  id="name"
+                  ref="nameInput" 
+                  onChange={this.handleChange} />
                 <label htmlFor="name" ref="nameLabel">Your name</label>
               </p>
               <p className="form__item">
-                <input required ref="emailInput" type="email" name="email" onChange={this.handleChange} />
+                <input 
+                  required                 
+                  type="email" 
+                  name="email" 
+                  id="email"
+                  ref="emailInput" 
+                  onChange={this.handleChange} 
+                />
                 <label htmlFor="email" ref="emailLabel">Your email</label>
               </p>
               <p className="form__item">
-                <label htmlFor="message"></label>
-                <textarea required placeholder="Send a message..." rows="5" cols="25" name="message" onChange={this.handleChange} />
+                <label htmlFor="message" ref="textareaLabel">Your message</label>
+                <textarea 
+                  required 
+                  name="message"
+                  id="message"
+                  ref="textArea"                    
+                  // placeholder="Send a message..." 
+                  rows="5" cols="25"
+                  onChange={this.handleChange} 
+                />
               </p>
               <p>
                 <button className="button" type="submit">Send</button>

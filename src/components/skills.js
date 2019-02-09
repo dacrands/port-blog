@@ -13,7 +13,7 @@ import HerokuSvg from '../images/skills/heroku-logo.svg'
 import JsSvg from '../images/skills/js-logo.svg'
 
 const Skills = () => (
-  <div className="logos">
+  <section className="logos">
     <div className="logos__container">
       <div className="container">
         <h1>Stack</h1>
@@ -95,7 +95,7 @@ const Skills = () => (
           <HtmlSvg style={styles.svg} />
           <CssSvg style={styles.svg} />
           <JsSvg style={styles.svg} />
-          <ReactSvg title="react" style={styles.svg} />
+          <ReactSvg style={styles.svg} />
           <NodeSvg style={styles.svg} />
           <SassSvg style={styles.svg} />
           <PostmanSvg style={styles.svg} />
@@ -108,7 +108,7 @@ const Skills = () => (
           <HtmlSvg style={styles.svg} />
           <CssSvg style={styles.svg} />
           <JsSvg style={styles.svg} />
-          <ReactSvg title="react" style={styles.svg} />
+          <ReactSvg style={styles.svg} />
           <NodeSvg style={styles.svg} />
           <SassSvg style={styles.svg} />
           <PostmanSvg style={styles.svg} />
@@ -119,7 +119,7 @@ const Skills = () => (
         </span>
       </div>
     </div>
-  </div>
+  </section>
 )
 
 const styles = {
