@@ -26,9 +26,9 @@ const ToViewIt = () => (
             {
               [
                 'Flask',
-                'Postgresql',
-                'Bcrypt',
-                'Heroku'].map(skill => (
+                'MySQL',
+                'Docker',
+                'DigitalOcean'].map(skill => (
                   <li>{skill}</li>
                 ))
             }

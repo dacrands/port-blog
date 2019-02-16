@@ -28,7 +28,9 @@ const TimesApp = () => (
                 'React',
                 'Redux',
                 'Sass',
-                'Flask Proxy Server'].map(skill => (
+                'Flask',
+                'Docker',
+                'DigitalOcean'].map(skill => (
                   <li>{skill}</li>
                 ))
             }

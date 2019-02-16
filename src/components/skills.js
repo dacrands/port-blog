@@ -16,29 +16,35 @@ const Skills = () => (
   <section className="logos">
     <div className="logos__container">
       <div className="container">
-        <h1>Stack</h1>
-        {/* <hr /> */}
-        <h3>Here's a list of the things I use (essentially) everyday</h3>
-        <div className="stack">
-          <div className="stack__row">
-          
-          <div className="stack__item">
-            <h3>Skills</h3>
+        <div className="logos__title">
+          <h1>Skills</h1>        
+          <h3>Most of my projects feature the following...</h3>
+        </div>        
+        
+
+        <table className="logos__table">
+          <tr>
+            <th>Features</th>
+            <td>
             <ul>
               {
                 [
-                  "ajax", 
+                  "AJAX", 
                   "responsive web design", 
-                  "user-authentication", 
-                  "relation databases"
+                  "semantic HTML", 
+                  "email authentication", 
+                  "REST APIs",
+                  "relational databases"
                 ].map(skill => (
                   <li>{skill}</li>
                 ))
               }              
             </ul>
-          </div>
-          <div className="stack__item">
-            <h3>Languages</h3>
+            </td>
+          </tr>          
+          <tr>
+            <th>Languages</th>
+            <td>
             <ul>
               {
                 [
@@ -51,45 +57,67 @@ const Skills = () => (
                 ))
               }              
             </ul>
-          </div>
-          </div>
-          <div className="stack__row">
-          
-          <div className="stack__item">
-            <h3>Frameworks/<br/>Libraries</h3>
+            </td>
+          </tr>          
+          <tr>
+            <th>Frameworks/
+              <br/>
+              Libraries</th>
+            <td>
             <ul>
             {
                 [
                   "React", 
                   "Flask", 
-                  "SQLAlchemy", 
-                  "Webpack", 
-                  "React/Redux", 
+                  "Redux", 
+                  "Gatsby", 
+                  "Webpack",
                   "Sass",                   
                 ].map(skill => (
                   <li>{skill}</li>
                 ))
               } 
             </ul>
-          </div>
-          <div className="stack__item">
-            <h3>Tools</h3>
+            </td>
+          </tr>
+          <tr>
+            <th>Tools</th>
+            <td>
             <ul>
             {
                 [
                   "Git", 
-                  "Heroku", 
-                  "DigitalOcean", 
-                  "VS code"
+                  "Nginx", 
+                  "Postman",                                     
+                  "PuTTy",
+                  "Prettier", 
                 ].map(skill => (
                   <li>{skill}</li>
                 ))
               } 
             </ul>
-          </div>
-          </div>
-        </div>
+            </td>
+          </tr>
+          <tr>
+            <th>Hosting</th>
+            <td>
+            <ul>
+            {
+                [
+                  "DigitalOcean", 
+                  "Heroku", 
+                  "Gitpages", 
+                  "Netlify ",                                
+                ].map(skill => (
+                  <li>{skill}</li>
+                ))
+              } 
+            </ul>
+            </td>
+          </tr>
+        </table>
       </div>
+
       <div className="logos__inner">
         <span className="logos__svgs">
           <HtmlSvg style={styles.svg} />
