@@ -35,16 +35,14 @@ class Navbar extends Component {
         <Link
           to="/"
           className="navbar__link"
-          activeClassName="navbar__link--active"
-          // activeStyle={{borderBottom:'4px solid #2c2a2a'}}
+          activeClassName="navbar__link--active"          
         >Home</Link>
         {` `}
-        <Link
-          to="/blog"
+        <a
+          href="https://dacrands.github.io/"
           className="navbar__link"
-          activeClassName="navbar__link--active"
-          // activeStyle={{borderBottom:'4px solid #2c2a2a'}}
-        >Blog</Link>
+          activeClassName="navbar__link--active"          
+        >Blog</a>
       </div>    
     </nav>
     )    
