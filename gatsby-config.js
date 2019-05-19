@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `David Crandall`,
-    description: `David Crandall's portfolio and blog. David is a full-stack web developer with a passiong
+    description: `David Crandall's portfolio and blog. David is a full-stack web developer with a passion
     for building things with React and Flask.`,
     author: `dacrands`,
   },
