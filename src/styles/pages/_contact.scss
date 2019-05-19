@@ -1,0 +1,22 @@
+.contact {
+  padding: 5vh 0;   
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: linear-gradient(to right, $primary, $primary-light);
+}
+
+.contact__title {
+  align-content: center;
+}
+
+.contact__content {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $light;
+  p{
+    color: #dadada;
+    max-width: 400px;
+  }
+}

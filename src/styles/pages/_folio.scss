@@ -1,0 +1,24 @@
+.folio {
+  padding-top: 3rem;
+  background: #e2f3fa54;  
+  // background: $light;
+}
+
+.folio__cards {  
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 400px)); */
+}
+
+.folio--bg {
+  background: #000;
+}
+
+.folio__header {
+  padding: 1rem 0;  
+  color: $primary;
+  // color: #458ba8;
+}

@@ -1,0 +1,111 @@
+.blog__post {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding: 1.25rem;
+  blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    color: rgb(99, 96, 96);
+  }
+}
+
+.blog__post h3 {
+  color: #2c2a2a;
+  font-size: 20px;
+}
+.blog__post h2 {
+  /* color: rgb(0, 162, 255); */
+  color: #54565f;
+  font-weight: normal;
+}
+
+.blog__post p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+/**   NOT ME
+ * If you already use line highlighting
+ */
+
+/* Adjust the position of the line numbers */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+/**
+ * If you only want to use line numbering
+ */
+
+.gatsby-highlight {
+  background-color: #fdf6e3;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
+
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+ .gatsby-highlight {
+  background-color: #fdf6e3;
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}

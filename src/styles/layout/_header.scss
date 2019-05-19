@@ -1,0 +1,23 @@
+.header {
+  padding: 50px 0;
+  h1 {
+    color: $primary;
+  }
+}
+
+.header {
+  h3, p {
+    color: $black;
+    font-weight: normal;
+  }    
+}
+
+
+.header > .container {
+  flex-grow: 1;
+  padding: 0;
+}
+
+.header > .container p {
+  float: left;
+}

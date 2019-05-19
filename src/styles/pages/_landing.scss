@@ -1,0 +1,41 @@
+.landing {
+  background: linear-gradient(to right, rgba(242, 244, 245, 0.664), rgba(242, 244, 245, 0.041));  
+  position: relative;
+}
+
+.landing__container {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;  
+  z-index: 1;
+  position: absolute;  
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: $primary;  
+  text-align: center;
+  h1 {
+    font-size: 400%;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #f3f4f5;
+  }
+  h2 {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: normal;
+  }
+
+  .button {
+    margin: 0.5rem;
+  }
+}
+
+.landing__img {
+  z-index: -1;  
+  height: 500px;  
+}

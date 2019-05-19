@@ -1,0 +1,28 @@
+.button {
+  display: inline-block;  
+  cursor: pointer;
+  border: none;
+  background: #134568;  
+  width: min-content;
+  white-space: nowrap;  
+  color: #f9f9f9;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold; 
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);  
+}
+
+.button--light {
+  background: #f9f9f9;
+  color: #134568;
+}
+
+.button:hover {
+  color: #f9f9f9;
+  background: #2a2b2c;
+  transform: translateY(-4px);
+}

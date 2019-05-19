@@ -1,0 +1,61 @@
+.form {  
+  max-width: 400px; 
+  color: #dadada;
+  padding: 1rem ;
+}
+
+.form__item--active {
+  color: $primary-light;
+  color: $comp;
+  // border: 1px solid red;
+}
+
+.form__item {
+  position: relative;  
+  label {
+    position: absolute;
+    top: 1rem;
+    left: 0;          
+    transition: all 200ms ease;
+    pointer-events: none;    
+  }
+  label[for="message"] {   
+    top: 0.5rem;
+    left: 0.5rem;
+    &~.label--move{
+      transform: translateY(-50%);
+      font-size: 14px;
+      font-weight: bold;      
+      // color: $comp;
+      color: orange;
+    }
+  }
+  input {
+    border: none;
+    padding: 1.25rem 0.5rem .15rem;    
+    border-bottom: 1px solid #dadada;    
+    background: none;
+    color: #f9f9f9;
+    &:focus {
+      outline-color:$comp;
+    }
+    &~.label--move{
+      transform: translateY(-50%);
+      font-size: 14px;
+      font-weight: bold;
+      left: 0.5rem;
+      top: 0.75rem;
+    }
+  }
+  textarea {
+    background: none;
+    border: none;    
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    color: #f9f9f9;
+    &:focus {
+      outline-color:$comp;      
+    }    
+  }
+}
