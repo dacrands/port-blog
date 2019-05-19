@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `David Crandall`,
+    title: `David Crandall, web developer`,
     description: `David Crandall's portfolio and blog. David is a full-stack web developer with a passion
     for building things with React and Flask.`,
-    author: `dacrands`,
+    author: `David Crandall`,
   },
   plugins: [   
     `gatsby-transformer-sharp`,
@@ -11,6 +11,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {      
+        trackingId: "UA-127816565-1",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
